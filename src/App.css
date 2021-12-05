@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+label {
+  margin-bottom: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #52575e;
+}
+.row1 {
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+/* Start Left Side  */
+.leftside {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image img {
+  max-width: 100%;
+}
+.image {
+  position: relative;
+}
+.image::after {
+  content: "Mostafa Fathi";
+  position: absolute;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #17a2b8;
+  bottom: 20px;
+  left: 5px;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+.leftside .information ul {
+  padding: 10px;
+}
+.leftside .information ul li {
+  margin-bottom: 4px;
+}
+.leftside .information ul li .i {
+  color: #17a2b8;
+  margin-right: 5px;
+}
+.leftside .information ul li span {
+  color: #52575e;
+}
+.leftside .skills {
+  padding: 10px;
+}
+.leftside .skills h5 .i {
+  color: #17a2b8;
+  margin-right: 5px;
+}
+.leftside .skills label {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.leftside .skills .skill .one {
+  width: 98%;
+}
+.leftside .skills .skill .two {
+  width: 90%;
+}
+.leftside .skills .skill .three {
+  width: 95%;
+}
+.leftside .skills .skill .four {
+  width: 75%;
+}
+.leftside .skills .skill .five {
+  width: 70%;
+}
+
+.leftside .languages {
+  padding: 10px;
+}
+.leftside .languages h5 .i {
+  color: #17a2b8;
+  margin-right: 5px;
+}
+.leftside .languages label {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* End Left Side  */
+/* Start Right Side  */
+.rightside {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightside .experience,
+.rightside .education {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.rightside .experience h3,
+.rightside .education h3 {
+  margin-bottom: 20px;
+}
+.rightside .experience h3 .i,
+.rightside .education h3 .i {
+  color: #17a2b8;
+  margin-right: 5px;
+}
+.rightside .experience .item,
+.rightside .education .item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.rightside .experience .item .period,
+.rightside .education .item .period {
+  color: #17a2b8;
+}
+.rightside .experience .item p span {
+  color: #fff;
+  background-color: #17a2b8;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 3px;
+}
+.rightside .experience .item p .i,
+.rightside .education .item p .i {
+  color: #17a2b8;
+  margin-right: 10px;
+}
+/* End Right Side  */
+/* Start Footer  */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #17a2b8;
+}
+footer p {
+  color: #fff;
+}
+footer ul li {
+  display: inline-block;
+  margin: 2px;
+}
+footer ul li .a {
+  color: #fff;
+}
+footer p span {
+  font-weight: bold;
+}
+/* End Footer  */
+@media (max-width: 1200px) {
+  .row1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .leftside {
+    width: 50%;
+  }
+  .rightside {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .row1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .leftside {
+    width: 100%;
+  }
+  .rightside {
+    width: 100%;
+  }
+}
